@@ -37,7 +37,7 @@ window.AudioPlayer.prototype.toggleAudio = function(t, e) {
             }
             else {
                 var msgId = i.parentElement.parentElement.parentElement.parentElement.dataset.msgid;
-                httpGetAsync("http://127.0.0.1:27700/playmsg?audio=" + o.fullId + "&msgid=" + msgId, function(e){ debugLog(e); });
+                httpGetAsync("http://127.0.0.1:27700/playit?audio=" + o.fullId + "&msgid=" + msgId, function(e){ debugLog(e); });
             }
             AudioUtils.onRowOver(i, !1, !0);
 };
